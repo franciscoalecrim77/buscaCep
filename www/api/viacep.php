@@ -1,6 +1,6 @@
 <?php
 
-class viacep
+class viaCep
 {
 
     public function buscaCep($cepnovo)
@@ -36,50 +36,50 @@ class viacep
 
         
         $html .= "    <div class=\"container mt-2\">
-                        <h6 class=\"text-start\">Resultados da busca para o CEP: ".$retorno->cep." </h6>
+                        <h6 class=\"text-start\">Resultados da busca para o CEP: ".htmlspecialchars($retorno->cep)." </h6>
                         <hr>
                         <div class=\"row border\">
                             <div class=\"col-md-4 col-4\">
-                                <b>Logradouro:</b> <span>".$retorno->logradouro."</span>
+                                <b>Logradouro:</b> <span>".htmlspecialchars($retorno->logradouro)."</span>
                             </div>
                             <div class=\"col-md-4 col-4\">
-                                <b>Complemento:</b> <span>".$retorno->complemento."</span>
+                                <b>Complemento:</b> <span>".htmlspecialchars($retorno->complemento)."</span>
                             </div>
                             <div class=\"col-md-4 col-4\">
-                                <b>Unidade:</b> <span>".$retorno->unidade."</span>
+                                <b>Unidade:</b> <span>".htmlspecialchars($retorno->unidade)."</span>
                             </div>
                         </div>
                             <div class=\"row border\">
                             <div class=\"col-md-4 col-4\">
-                                <b>Bairro:</b> <span>".$retorno->bairro."</span>
+                                <b>Bairro:</b> <span>".htmlspecialchars($retorno->bairro)."</span>
                             </div>
                             <div class=\"col-md-4 col-4\">
-                                <b>Localidade:</b> <span>".$retorno->localidade."</span>
+                                <b>Localidade:</b> <span>".htmlspecialchars($retorno->localidade)."</span>
                             </div>
                             <div class=\"col-md-4 col-4\">
-                                <b>UF:</b> <span>".$retorno->uf."</span>
+                                <b>UF:</b> <span>".htmlspecialchars($retorno->uf)."</span>
                             </div>
                             </div>
                             <div class=\"row border\">
                             <div class=\"col-md-4 col-4\">
-                                <b>Estado:</b> <span>".$retorno->estado."</span>
+                                <b>Estado:</b> <span>".htmlspecialchars($retorno->estado)."</span>
                             </div>
                             <div class=\"col-md-4 col-4\">
-                                <b>Região:</b> <span>".$retorno->regiao."</span>
+                                <b>Região:</b> <span>".htmlspecialchars($retorno->regiao)."</span>
                             </div>
                             <div class=\"col-md-4 col-4\">
-                                <b>IBGE:</b> <span>".$retorno->ibge."</span>
+                                <b>IBGE:</b> <span>".htmlspecialchars($retorno->ibge)."</span>
                             </div>
                             </div>
                             <div class=\"row border\">
                             <div class=\"col-md-4 col-4\">
-                                <b>GIA:</b> <span>".$retorno->gia."</span>
+                                <b>GIA:</b> <span>".htmlspecialchars($retorno->gia)."</span>
                             </div>
                             <div class=\"col-md-4 col-4\">
-                                <b>DDD:</b> <span>".$retorno->ddd."</span>
+                                <b>DDD:</b> <span>".htmlspecialchars($retorno->ddd)."</span>
                             </div>
                             <div class=\"col-md-4 col-4\">
-                                <b>SIAFI:</b> <span>".$retorno->siafi."</span>
+                                <b>SIAFI:</b> <span>".htmlspecialchars($retorno->siafi)."</span>
                             </div>
 
                         </div>";

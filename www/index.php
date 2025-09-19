@@ -1,24 +1,24 @@
 <?php
-include('./api/viacep.php');
+include('./api/viaCep.php');
 $retorno = '';
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
   $cep = (isset($_POST['cep']) && $_POST['cep'] != '') ? $_POST['cep'] : "Sem dados";
-  $cepnovo = str_replace('-', '', $cep);
-  $viacep = new viacep();
-  $retorno = $viacep->buscaCep($cepnovo);
+  $cepNovo = str_replace('-', '', $cep);
+  $viaCep = new viaCep();
+  $retorno = $viaCep->buscaCep($cepNovo);
   // print_r($retorno);
 }
 
 ?>
 
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>Busca Cep</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -55,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     </form>
     <?php
     if (isset($retorno) && $retorno != null) {
-      echo $viacep->retorno($retorno);
+      echo $viaCep->retorno($retorno);
     } else {
     }
     ?>
