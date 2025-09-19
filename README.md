@@ -30,7 +30,6 @@ Este projeto foi desenvolvido como parte de estudos em PHP e integração com AP
 
 📦 buscador-ceps
 ┣ 📂 api
-
 ┃ ┗ 📜 viaCep.php
 ┣ 📂 js
 ┃ ┗ 📜 index.js
