@@ -27,11 +27,11 @@ Este projeto foi desenvolvido como parte de estudos em PHP e integração com AP
 ---
 
 ## 📂 Estrutura de Pastas
-
+```text
 📦 buscador-ceps
-┣ 📂 api
-┃ ┗ 📜 viaCep.php
-┣ 📂 js
-┃ ┗ 📜 index.js
-┣ 📜 index.php
-┣ 📜 README.md
+ ┣ 📂 api
+ ┃ ┗ 📜 viacep.php
+ ┣ 📂 js
+ ┃ ┗ 📜 index.js
+ ┣ 📜 index.php
+ ┣ 📜 README.md
