@@ -39,16 +39,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <form action="" method="post" id="buscaCep">
 
       <div class="container border mt-3 p-2">
-        <div class="row ">
-          <div class="col-md-1 col-1 text-center ">
-            CEP:
+        <div class="row g-2 align-items-center">
+          <div class="col-12 col-md-1 text-center text-md-end">
+            <label for="cep" class="form-label mb-0">CEP:</label>
           </div>
-          <div class="col-md-3 col-3">
-            <input type="text" name="cep" id="cep">
+          <div class="col-12 col-md-3">
+            <input type="text" name="cep" id="cep" class="form-control">
           </div>
-          <div class="col-md-4 col-4">
-            <!-- <input type="text" name="cep" id="cep"> -->
-            <input type="submit" class="btn btn-success" value="Buscar">
+          <div class="col-12 col-md-4">
+            <button type="submit" class="btn btn-success  w-md-auto">Buscar</button>
           </div>
         </div>
       </div>

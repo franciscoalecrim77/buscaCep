@@ -27,62 +27,65 @@ class viaCep
     public function retorno($retorno)
     {
         $html = "";
-        if(isset($retorno->erro) && $retorno->erro == true){
+        if (isset($retorno->erro) && $retorno->erro == true) {
             $html .= "<div class=\"alert alert-danger mt-2\" role=\"alert\">
-                        CEP n&atilde;o encontrado!
-                    </div>";
+                    CEP n&atilde;o encontrado!
+                 </div>";
             return $html;
-        }else{
+        } else {
 
-        
-        $html .= "    <div class=\"container mt-2\">
-                        <h6 class=\"text-start\">Resultados da busca para o CEP: ".htmlspecialchars($retorno->cep)." </h6>
-                        <hr>
-                        <div class=\"row border\">
-                            <div class=\"col-md-4 col-4\">
-                                <b>Logradouro:</b> <span>".htmlspecialchars($retorno->logradouro)."</span>
-                            </div>
-                            <div class=\"col-md-4 col-4\">
-                                <b>Complemento:</b> <span>".htmlspecialchars($retorno->complemento)."</span>
-                            </div>
-                            <div class=\"col-md-4 col-4\">
-                                <b>Unidade:</b> <span>".htmlspecialchars($retorno->unidade)."</span>
-                            </div>
+            $html .= "<div class=\"container mt-3\">
+                    <h6 class=\"text-start\">Resultados da busca para o CEP: " . htmlspecialchars($retorno->cep) . "</h6>
+                    <hr>
+                    
+                    <div class=\"row border p-2\">
+                        <div class=\"col-12 col-md-4 mb-2\">
+                            <b>Logradouro:</b> <span>" . htmlspecialchars($retorno->logradouro) . "</span>
                         </div>
-                            <div class=\"row border\">
-                            <div class=\"col-md-4 col-4\">
-                                <b>Bairro:</b> <span>".htmlspecialchars($retorno->bairro)."</span>
-                            </div>
-                            <div class=\"col-md-4 col-4\">
-                                <b>Localidade:</b> <span>".htmlspecialchars($retorno->localidade)."</span>
-                            </div>
-                            <div class=\"col-md-4 col-4\">
-                                <b>UF:</b> <span>".htmlspecialchars($retorno->uf)."</span>
-                            </div>
-                            </div>
-                            <div class=\"row border\">
-                            <div class=\"col-md-4 col-4\">
-                                <b>Estado:</b> <span>".htmlspecialchars($retorno->estado)."</span>
-                            </div>
-                            <div class=\"col-md-4 col-4\">
-                                <b>Região:</b> <span>".htmlspecialchars($retorno->regiao)."</span>
-                            </div>
-                            <div class=\"col-md-4 col-4\">
-                                <b>IBGE:</b> <span>".htmlspecialchars($retorno->ibge)."</span>
-                            </div>
-                            </div>
-                            <div class=\"row border\">
-                            <div class=\"col-md-4 col-4\">
-                                <b>GIA:</b> <span>".htmlspecialchars($retorno->gia)."</span>
-                            </div>
-                            <div class=\"col-md-4 col-4\">
-                                <b>DDD:</b> <span>".htmlspecialchars($retorno->ddd)."</span>
-                            </div>
-                            <div class=\"col-md-4 col-4\">
-                                <b>SIAFI:</b> <span>".htmlspecialchars($retorno->siafi)."</span>
-                            </div>
+                        <div class=\"col-12 col-md-4 mb-2\">
+                            <b>Complemento:</b> <span>" . htmlspecialchars($retorno->complemento) . "</span>
+                        </div>
+                        <div class=\"col-12 col-md-4 mb-2\">
+                            <b>Unidade:</b> <span>" . htmlspecialchars($retorno->unidade) . "</span>
+                        </div>
+                    </div>
 
-                        </div>";
+                    <div class=\"row border p-2\">
+                        <div class=\"col-12 col-md-4 mb-2\">
+                            <b>Bairro:</b> <span>" . htmlspecialchars($retorno->bairro) . "</span>
+                        </div>
+                        <div class=\"col-12 col-md-4 mb-2\">
+                            <b>Localidade:</b> <span>" . htmlspecialchars($retorno->localidade) . "</span>
+                        </div>
+                        <div class=\"col-12 col-md-4 mb-2\">
+                            <b>UF:</b> <span>" . htmlspecialchars($retorno->uf) . "</span>
+                        </div>
+                    </div>
+
+                    <div class=\"row border p-2\">
+                        <div class=\"col-12 col-md-4 mb-2\">
+                            <b>Estado:</b> <span>" . htmlspecialchars($retorno->estado) . "</span>
+                        </div>
+                        <div class=\"col-12 col-md-4 mb-2\">
+                            <b>Região:</b> <span>" . htmlspecialchars($retorno->regiao) . "</span>
+                        </div>
+                        <div class=\"col-12 col-md-4 mb-2\">
+                            <b>IBGE:</b> <span>" . htmlspecialchars($retorno->ibge) . "</span>
+                        </div>
+                    </div>
+
+                    <div class=\"row border p-2\">
+                        <div class=\"col-12 col-md-4 mb-2\">
+                            <b>GIA:</b> <span>" . htmlspecialchars($retorno->gia) . "</span>
+                        </div>
+                        <div class=\"col-12 col-md-4 mb-2\">
+                            <b>DDD:</b> <span>" . htmlspecialchars($retorno->ddd) . "</span>
+                        </div>
+                        <div class=\"col-12 col-md-4 mb-2\">
+                            <b>SIAFI:</b> <span>" . htmlspecialchars($retorno->siafi) . "</span>
+                        </div>
+                    </div>
+                </div>";
         }
         return $html;
     }
