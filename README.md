@@ -35,3 +35,10 @@ Este projeto foi desenvolvido como parte de estudos em PHP e integração com AP
  ┃ ┗ 📜 index.js
  ┣ 📜 index.php
  ┣ 📜 README.md
+
+## 📜 Licença
+Este projeto está licenciado sob a [MIT License](LICENSE).  
+Isso significa que você pode **usar, modificar e distribuir** o código livremente, desde que mantenha os créditos ao autor.
+
+---
+👨‍💻 Desenvolvido por [Francisco Alecrim Tamberi](https://github.com/franciscoalecrim77)
